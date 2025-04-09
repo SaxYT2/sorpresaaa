@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensaje de Amor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffcccc);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      max-width: 1000px;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .images img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border: 3px solid #ff99aa;
+      transition: transform 0.3s ease;
+    }
+    /* Imágenes rotadas hacia la izquierda */
+    .images img:nth-child(odd) {
+      transform: rotate(-8deg);
+    }
+
+/* Imágenes rotadas hacia la derecha */
+    .images img:nth-child(even) {
+      transform: rotate(8deg);
+    }
+
+
+    .message-box {
+      background-color: #fff0f5;
+      padding: 30px 25px;
+      border-radius: 20px;
+      border: 5px dashed #ff6688;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .message-box h1 {
+      color: #d6336c;
+      margin-bottom: 15px;
+    }
+
+    .message-box p {
+      color: #5c2a3c;
+      font-size: 17px;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      .images {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .images.right {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="birds.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+      </audio>
+      
+      <button onclick="document.getElementById('bg-music').play()" style="margin-top: 20px; padding: 10px 20px; border: none; background-color: #ff99aa; color: white; font-size: 16px; border-radius: 10px; cursor: pointer;">Reproducir música 🎵</button>
+      
+
+  <div class="container">
+    <div class="images">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653863988269167/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.31_21b798b1.jpg?ex=67f843d6&is=67f6f256&hm=e86f69ae770305b31d3df87d7deed57cf975ec9eb924576995abc7732c77a1a5&=&format=webp" alt="img1">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653880367022170/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.31_e02a2779.jpg?ex=67f843da&is=67f6f25a&hm=348def4489ae156d54870067e27d4866c63f15b9ebe5d4e952bf6b73de1c9cfd&=&format=webp" alt="img2">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653899606429817/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.31_8dc28b8d.jpg?ex=67f843de&is=67f6f25e&hm=09522560685c2c4476bdac874a20247511d578c9fd55260d3d29bc550738a741&=&format=webp&width=1536&height=864" alt="img3">
+    </div>
+
+    <div class="message-box">
+      <h1>Para ti ❤️</h1>
+      <p>
+        Holii, te hago esto para decirte muchas cosas
+
+        Perdón por todos los malos entendidos que tuvimos en estos días. Eres una persona increíble, con una personalidad muy bonita  
+        Te lo digo desde mi corazón: eres muy importante para mí, y con la única que he tenido una gran conexión  
+
+        Eres una niña muy linda, con ojitos hermosos, y única. Estoy agradecido de tenerte aquí a mi lado, porque eres la única que me ha entendido todos estos meses  
+        Tú eres mi lugar seguro, con quien me siento cómodo siendo yo mismo  
+
+        Eres una de las personas que más amo en este mundo. Ni las constelaciones ni los paisajes son tan hermosos como tus ojitos  
+        Gracias mi niña bonita por hacer mi vida más linda y llenarme de felicidad todos los días 
+        Ninguna distancia impedirá que te ame con todo mi corazón ❤️  
+
+        Perdón por muchas cosas que te hice, no eran mis intenciones 
+        Eres mi niña linda, cosa preciosa, y una gran mujer 
+
+        Si hay otras vidas, te prometo que te visitaré en cada una de ellas  
+        Los ojos no brillan por cualquiera, y los míos brillan cada que pienso en ti  
+
+        Me has ayudado en todos los casos. Cuando estaba en mis peores momentos, tú estuviste ahí para ayudarme y hacerme feliz 
+        Tú eres la única que tiene esta versión de mí (la versión cariñosa y feliz)
+
+        Mi corazón se siente agradecido contigo por cuidarlo muy bien, y espero que lo sigas cuidando tal como lo haces
+        Nunca cambies tu manera de ser muack
+      </p>
+    </div>
+
+    <div class="images right">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653921802420254/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.32_5869489c.jpg?ex=67f843e4&is=67f6f264&hm=689d64c46cbe07bd90766f9aace72bcbda0a384353577741d28e637072146efc&=&format=webp" alt="img4">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653940173607053/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.32_b7b30778.jpg?ex=67f843e8&is=67f6f268&hm=877ed8f38eb92a649568fb82e4c8b7f4f9f9fbd2761fbaba091da225bb52e468&=&format=webp&width=790&height=968" alt="img5">
+      <img src="https://media.discordapp.net/attachments/1359243772705378326/1359653957747867809/Imagen_de_WhatsApp_2025-04-09_a_las_13.03.32_65562865.jpg?ex=67f843ec&is=67f6f26c&hm=dafdff917fa73fb6a99109ff3a0a33ed73b2deb8c5ffc047e418a55ed8d890e2&=&format=webp&width=763&height=968" alt="img6">
+    </div>
+  </div>
+</body>
+</html>
+
+
